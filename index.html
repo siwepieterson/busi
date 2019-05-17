@@ -1,100 +1,47 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body {
-background-color : pink;
-}
-#busi {
-border-style : solid;
-border-color : blue;
-
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="portfoli.html">
+    <link rel="stylesheet" href="skills.html">
+    <link rel="stylesheet" href="contact.html">
 </head>
+
 <body>
-<div id = "busi">
-<center><h1>Learning to code</h1> <br/> <h4>with Busi Pieterson</h4></center>
-</div>
-<h2>Challenge 1</h2>
-
-<script type = "text/javascript"> 
-
-  // challenge 1
-
-
-function busiTime() {
-    var today = new Date();
-    var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var day = today.getDay();
-    var hours = today.getHours() 
-    var meridian = today.getHours >= 12 ? "PM" : "AM";
-    var minutes = today.getMinutes();
-    var seconds = today.getSeconds();
-
-    document.write("Today is : " + week[day] + "." + " Current time is : " + hours + " " + meridian + " : "+ minutes +" : "+ seconds);
-}
-busiTime();
-</script>
-
-
-<h2>Challenge 2</h2>
-<script type = "text/javascript"> 
-
-  // challenge 2
-
-document.write(document.URL);
-
-
-</script>
-
-
-<h2>Challenge 3</h2>
-<script type = "text/javascript"> 
-
-  // challenge 3
-
-
-document.write('learning Javascript and loving it '.includes('Java'));
-
-</script>
-
-
-<h2>Challenge 4</h2>
-<script type = "text/javascript"> 
-
-  // challenge 4
-
-document.write(Math.max(prompt("first interger"),prompt("second interger"),prompt("third interger")));
-
-</script>
-
-
-<h2>Challenge 5</h2>
-<script type = "text/javascript"> 
-
-  // challenge 5
-
-var sentence = 'the boy is very lazy';
-var captializeString = (sentence) => sentence[0].toUpperCase() + sentence.slice(1).toLowerCase();
-var capitalizeWords = (sentence) => sentence.split(' ').map(captializeString).join(' ');
-document.write(capitalizeWords(sentence));
-
-</script>
-
-
-<h2>Challenge 6</h2>
-<script type = "text/javascript"> 
-
-  // challenge 6
-
-function timeConvert(num) {
-    var hours = Math.floor(num/60);
-    var min = num % 60;
-    return hours + ":" + min;
-  }
-  document.write(timeConvert(prompt("Enter time in minutes")));
-
-</script>
+    <div class="container">
+        <div class='outer'>
+        </div>
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfoli.html">Portfolio</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <section class="recruit">
+                <img src="file:///home/busi/Pictures/busidisplaypic.jpg" height="200">
+                <div class="recruit-content">
+                    <h1>Passionate<br> Junior Web Developer</h1>
+                    <p>I am a Junior Web Developer intern based in Johannesburg, South Africa. I will be doing both frontend and backend
+                        and will work on some exciting projects. I am very passionate about my work.</p>
+                            <br></br>
+                        <a class="action-btn" href="#">Hire me</a>
+                        </div>
+                </div>
+        </div>
+        </section>
+        <div class="footer"></div>
+    </div>
 </body>
-</html> 
+
+</html>
